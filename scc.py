@@ -9,7 +9,7 @@ x , y = 0 , 0
 xydist = 150
 step = 1
 
-def create_new_spiral(x: int = 0 , y: int = 0 , step: int = 1):
+def calculate_spiral_chunk(x: int = 0 , y: int = 0 , step: int = 1):
     
     next_step = 2 * step
     if x == -xydist * (next_step - step) and y == xydist * (next_step - step): step += 1
@@ -25,4 +25,4 @@ def create_new_spiral(x: int = 0 , y: int = 0 , step: int = 1):
     print(x,y,step)
     #return (x,y,step)
 
-create_new_spiral(x,y,step)
+calculate_spiral_chunk(x,y,step)
